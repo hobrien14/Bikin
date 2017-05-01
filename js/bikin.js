@@ -22,11 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     L.esri.featureLayer({
         url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/4'
     }).addTo(map);
-    
-    function showLatLng(e) {
-  document.getElementById("whatIsThis").innerText =  "Bell Joy Ride is a program that encourages women to get out and mountain bike. The trails shown are the group ride trails that will be happening in the summer of 2017."
-}
-map.on('mousemove', showLatLng);
     /*
         your code will go here
         */
