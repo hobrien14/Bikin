@@ -1,13 +1,29 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8' />
-        <title>*your application name here*</title>
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        
-    </head>
-    <body>
 
-        
-    </body>
+<head>
+    <meta charset=utf-8 />
+    <title>Holly's Bike Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="/style/bikin.css" />
+    
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
+    <script src="js/bikin.js"></script>
+
+</head>
+
+<body>
+    <img src="http://frccbcc.maps.arcgis.com/sharing/rest/content/items/e0772bc35d9f4efea4eaee9279e0ba0f/data"
+width="50" height="60" alt="bike girl"/>
+    <div id="map"></div>
+     <div id="whatIsThis" class="floater">
+    </div>
+</body>
+
 </html>
