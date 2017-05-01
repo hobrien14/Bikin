@@ -2,6 +2,7 @@ html, body, #map {
         height: 100%;
         margin: 0;
         padding: 0;
+
       }
 #whatIsThis {
   top: 10px;
@@ -16,4 +17,4 @@ html, body, #map {
 .floater {
   position: absolute;
   z-index: 999;
-}/* it is totally okay for this to be completely empty right now, add what you need */
+}
