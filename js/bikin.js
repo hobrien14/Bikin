@@ -52,5 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
     L.esri.featureLayer({
         url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/4'
     }).addTo(map);
+    
+    document.getElementById("goToMbp").onclick = function(){
+  window.open('https://www.mtbproject.com');
+        
+    };
+
 
 });
+map.on('click', onMapClick);    
+    

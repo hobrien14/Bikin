@@ -18,3 +18,21 @@ html, body, #map {
   position: absolute;
   z-index: 999;
 }
+#buttonContainer {
+  bottom: 10px;
+  left: 10px;
+}
+button {
+  margin: 8px;
+  padding: 8px;
+  background-color: pink;
+  border-radius: 6px;
+  font-size:14px;
+  font-weight:900;
+  border: 2px solid rgba(0,100,0,0.5);
+}
+button:hover {
+  cursor:pointer;
+  background-color:teal;
+  color:white;
+}
