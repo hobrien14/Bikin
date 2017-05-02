@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     L.esri.basemapLayer("Topographic").addTo(map);
 
     var trails = L.esri.featureLayer({
-        url:"http://maps.jeffco.us/arcgis/rest/services/jMap/OpenSpaceParkTrails/MapServer/3",
+        url: "http://maps.jeffco.us/arcgis/rest/services/jMap/OpenSpaceParkTrails/MapServer/3",
         style: function (feature) {
             var c;
             switch (feature.properties.TRAIL_DIFFICULTY_RATING) {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     c = '#FFEB00';
                     break;
                                                               }
-            return { color: c, opacity: 1, weight: 3 }
+            return { color: c, opacity: 0.8, weight: 3 }
         }
     }).addTo(map);
 
@@ -33,32 +33,42 @@ document.addEventListener('DOMContentLoaded', function() {
     L.esri.featureLayer({
         url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/0',
         style: function (feature) {
-            return { color: '#dfa855', opacity: 1, weight: 3 }
+            return { color: '#9932CC', opacity: 1, weight: 3 }
         }
     }).addTo(map);
 
     L.esri.featureLayer({
-        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/1'
+        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/1',
+        style: function (feature) {
+            return { color: '#9932CC', opacity: 1, weight: 3 }
+        }
     }).addTo(map);
 
     L.esri.featureLayer({
-        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/2'
+        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/2',
+        style: function (feature) {
+            return { color: '#9932CC', opacity: 1, weight: 3 }
+        }
     }).addTo(map);
 
     L.esri.featureLayer({
-        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/3'
+        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/3',
+        style: function (feature) {
+            return { color: '#9932CC', opacity: 1, weight: 3 }
+        }
     }).addTo(map);
 
     L.esri.featureLayer({
-        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/4'
+        url: 'http://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/4',
+        style: function (feature) {
+            return { color: '#9932CC', opacity: 1, weight: 3 }
+        }
     }).addTo(map);
-    
-    document.getElementById("goToMbp").onclick = function(){
-  window.open('https://www.mtbproject.com');
-        
-    };
+  
+document.getElementById("goToMbp").onclick = function(){
+  window.open('https://www.mtbproject.com/directory/8007464/golden');
 
-
-});
-map.on('click', onMapClick);    
-    
+};
+   });
+  map.on('click', onMapClick);
+  
