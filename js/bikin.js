@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }).addTo(map);
 
-    L.esri.featureLayer({
+   var layer3= L.esri.featureLayer({
         url: '//services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/3',
         style: function (feature) {
             return {
@@ -76,7 +76,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }).addTo(map);
-
+layer3.bindPopup(function (layer) {
+        return L.Util.template('<p><h2>{name}</h2><h5>{type}</h5><h5>{desc_}</h5></p>', layer.feature.properties);
+    });
     L.esri.featureLayer({
         url: '//services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Tracks/FeatureServer/4',
         style: function (feature) {
